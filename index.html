@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashish Sharma | AI & Data Science Portfolio</title>
-  <meta name="description" content="Portfolio CV webpage for Ashish Sharma featuring an AI customer support chatbot and project showcase." />
+  <title>Chatbot Project Test Site | WotNot</title>
+  <meta name="description" content="A clean chatbot project test site for the BS in Applied AI and Data Science support assistant built with WotNot." />
   <style>
     :root {
-      --bg: #0b1020;
-      --bg2: #111827;
-      --card: rgba(17, 24, 39, 0.82);
+      --bg: #07111f;
+      --bg-2: #0c1728;
+      --card: rgba(15, 23, 42, 0.88);
       --card-2: rgba(255, 255, 255, 0.04);
       --text: #e5e7eb;
-      --muted: #9ca3af;
+      --muted: #94a3b8;
       --accent: #38bdf8;
-      --accent2: #22c55e;
+      --accent-2: #22c55e;
       --border: rgba(255, 255, 255, 0.09);
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
       --radius: 24px;
     }
 
@@ -27,17 +27,15 @@
       font-family: Inter, Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(56, 189, 248, 0.17), transparent 28%),
-        radial-gradient(circle at 85% 15%, rgba(34, 197, 94, 0.12), transparent 22%),
-        linear-gradient(180deg, #030712 0%, #0b1020 100%);
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(34, 197, 94, 0.12), transparent 24%),
+        linear-gradient(180deg, #020617 0%, #07111f 100%);
       line-height: 1.6;
     }
 
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .container {
-      width: min(1150px, calc(100% - 32px));
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
       padding: 28px 0 56px;
     }
@@ -46,13 +44,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
+      gap: 16px;
       padding: 14px 18px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.03);
       border-radius: 999px;
-      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
       box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
       position: sticky;
       top: 16px;
       z-index: 20;
@@ -63,7 +61,6 @@
       align-items: center;
       gap: 12px;
       font-weight: 700;
-      letter-spacing: 0.2px;
     }
 
     .logo {
@@ -75,14 +72,12 @@
       background: linear-gradient(135deg, var(--accent), #60a5fa);
       color: #00111a;
       font-weight: 900;
-      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
     }
 
     .nav {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
-      justify-content: center;
       color: var(--muted);
       font-size: 0.96rem;
     }
@@ -90,15 +85,15 @@
     .nav a:hover { color: white; }
 
     .hero {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 22px;
       margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
       align-items: stretch;
     }
 
     .card {
-      background: linear-gradient(180deg, var(--card), rgba(17, 24, 39, 0.72));
+      background: linear-gradient(180deg, var(--card), rgba(15, 23, 42, 0.74));
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -114,10 +109,10 @@
     .hero-left::after {
       content: "";
       position: absolute;
-      inset: auto -80px -80px auto;
-      width: 220px;
-      height: 220px;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.17), transparent 70%);
+      inset: auto -90px -90px auto;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.18), transparent 68%);
       pointer-events: none;
     }
 
@@ -127,31 +122,32 @@
       gap: 8px;
       padding: 8px 14px;
       border-radius: 999px;
-      border: 1px solid rgba(56, 189, 248, 0.28);
       background: rgba(56, 189, 248, 0.12);
-      color: #d5f3ff;
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      color: #d6f3ff;
       font-size: 0.92rem;
       margin-bottom: 14px;
     }
 
-    .badge-dot {
+    .dot {
       width: 8px;
       height: 8px;
       border-radius: 999px;
-      background: var(--accent2);
-      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.15);
+      background: var(--accent-2);
+      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.12);
+      flex: 0 0 auto;
     }
 
     h1 {
       margin: 10px 0 10px;
-      font-size: clamp(2.3rem, 5vw, 4.4rem);
-      line-height: 1.04;
+      font-size: clamp(2.35rem, 5vw, 4.25rem);
+      line-height: 1.02;
     }
 
     .lead {
-      max-width: 68ch;
       color: #cbd5e1;
-      font-size: 1.05rem;
+      font-size: 1.06rem;
+      max-width: 66ch;
       margin-bottom: 22px;
     }
 
@@ -165,17 +161,17 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 14px;
       padding: 12px 18px;
+      border-radius: 14px;
       font-weight: 700;
       border: 1px solid var(--border);
-      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+      transition: transform 0.18s ease, background 0.18s ease;
     }
 
     .btn:hover { transform: translateY(-2px); }
     .btn.primary {
       background: linear-gradient(135deg, var(--accent), #60a5fa);
-      color: #02121d;
+      color: #00111a;
       border-color: transparent;
     }
     .btn.secondary { background: rgba(255, 255, 255, 0.04); }
@@ -183,7 +179,7 @@
     .hero-right {
       padding: 24px;
       display: grid;
-      gap: 16px;
+      gap: 14px;
     }
 
     .mini-card {
@@ -220,7 +216,7 @@
 
     .muted { color: var(--muted); }
 
-    .pill-row {
+    .stack {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -235,72 +231,110 @@
       font-size: 0.95rem;
     }
 
-    .timeline {
-      display: grid;
-      gap: 14px;
-    }
-
-    .timeline-item {
-      padding: 16px 18px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      border-radius: 16px;
-    }
-
-    .timeline-item strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .project-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .project-box {
+    .panel {
       padding: 18px;
       border-radius: 18px;
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border);
     }
 
-    .project-box h3 {
+    .panel h3 {
+      margin: 0 0 10px;
+      font-size: 1.04rem;
+    }
+
+    .steps {
+      display: grid;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .step {
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .num {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(56, 189, 248, 0.14);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      color: #d6f3ff;
+      flex: 0 0 auto;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-top: 1px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .metric {
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+    }
+
+    .chat-section {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .chat-box {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+    }
+
+    .chat-box h3 {
       margin: 0 0 8px;
       font-size: 1.05rem;
     }
 
-    .project-list {
-      display: grid;
-      gap: 10px;
-      margin-top: 10px;
-      color: #dbeafe;
-    }
-
-    .project-list span {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 999px;
-      background: var(--accent2);
-      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.12);
-      flex: 0 0 auto;
-    }
-
     .chat-note {
       padding: 16px 18px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.11), rgba(255, 255, 255, 0.03));
-      border: 1px solid rgba(56, 189, 248, 0.18);
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.10), rgba(255, 255, 255, 0.03));
+      border: 1px solid rgba(56, 189, 248, 0.16);
       color: #dbeafe;
       margin-bottom: 14px;
+    }
+
+    .iframe-wrap {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #0a1220;
+      min-height: 760px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 760px;
+      border: 0;
+      display: block;
+      background: #fff;
     }
 
     .footer {
@@ -308,12 +342,12 @@
       text-align: center;
       color: var(--muted);
       font-size: 0.94rem;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
     }
 
-    @media (max-width: 940px) {
+    @media (max-width: 960px) {
       .hero,
-      .project-layout {
+      .chat-section {
         grid-template-columns: 1fr;
       }
       .span-6,
@@ -321,172 +355,193 @@
       .span-8 {
         grid-column: 1 / -1;
       }
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
       .topbar {
         border-radius: 22px;
-        padding: 14px 16px;
       }
       .hero-left {
         padding: 26px;
       }
+      iframe {
+        height: 700px;
+      }
     }
 
     @media (max-width: 560px) {
-      .container { width: min(100% - 20px, 1150px); }
+      .wrap {
+        width: min(100% - 18px, 1180px);
+      }
       .nav { display: none; }
       .hero-left { padding: 22px; }
       section.card { padding: 20px; }
+      iframe { height: 640px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrap">
     <header class="topbar card">
       <div class="brand">
-        <div class="logo">AS</div>
+        <div class="logo">WB</div>
         <div>
-          <div>Ashish Sharma</div>
-          <small class="muted">AI & Data Science Student</small>
+          <div>WotNot Chatbot Test Site</div>
+          <small class="muted">Customer Support Assistant Project</small>
         </div>
       </div>
-
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#chatbot">Chatbot</a>
-        <a href="#contact">Contact</a>
+        <a href="#overview">Overview</a>
+        <a href="#test">Test Flow</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#chatbot">Live Chat</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="card hero-left">
-          <div class="badge"><span class="badge-dot"></span> Portfolio CV • GitHub Pages Ready</div>
-          <h1>Ashish Sharma</h1>
+          <div class="badge"><span class="dot"></span> Live chatbot project test site</div>
+          <h1>Customer Support Assistant Chatbot</h1>
           <p class="lead">
-            I am an AI and Data Science student building practical projects that combine automation,
-            web development, and intelligent assistants. This webpage presents my profile and my
-            customer support chatbot for the BS in Applied AI and Data Science program.
+            This page is a simple project test site for my chatbot built using WotNot.
+            It is designed to help users ask questions about the BS in Applied AI and Data Science program.
           </p>
           <div class="cta-row">
-            <a class="btn primary" href="#projects">See Projects</a>
-            <a class="btn secondary" href="#chatbot">Open Chatbot Section</a>
+            <a class="btn primary" href="#chatbot">Open Chatbot</a>
+            <a class="btn secondary" href="#test">How to Test</a>
           </div>
         </div>
 
-        <aside class="card hero-right">
+        <aside class="card hero-right" id="overview">
           <div class="mini-card">
-            <h3>Profile</h3>
-            <p>Student focused on AI tools, data science, web pages, and useful real-world projects.</p>
+            <h3>Project Type</h3>
+            <p>AI-powered support assistant for course-related guidance.</p>
           </div>
           <div class="mini-card">
-            <h3>Goal</h3>
-            <p>To create portfolio projects that solve problems and look professional to recruiters.</p>
+            <h3>Use Case</h3>
+            <p>Answering basic questions, giving guidance, and testing chatbot deployment.</p>
           </div>
           <div class="mini-card">
-            <h3>Featured Work</h3>
-            <p>Customer support assistance chatbot built with WotNot and embedded on this site.</p>
+            <h3>Platform</h3>
+            <p>Embedded using WotNot chat widget on a GitHub Pages website.</p>
           </div>
         </aside>
       </section>
 
-      <section class="grid" id="about">
+      <section class="grid" id="test">
         <section class="card span-6">
-          <h2>About Me</h2>
-          <p class="muted">
-            I am currently pursuing BS in Applied AI and Data Science. I enjoy learning by building,
-            especially projects that blend AI, automation, and simple web interfaces. My focus is on
-            creating portfolio-ready work that demonstrates practical skills.
-          </p>
+          <h2>How to Test the Chatbot</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="num">1</div>
+              <div>
+                <strong>Click the chat bubble</strong>
+                <div class="muted">Open the WotNot widget in the bottom-right corner.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="num">2</div>
+              <div>
+                <strong>Ask a course question</strong>
+                <div class="muted">Try asking about the BS in Applied AI and Data Science program.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="num">3</div>
+              <div>
+                <strong>Check response flow</strong>
+                <div class="muted">See whether the chatbot answers clearly and quickly.</div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section class="card span-6" id="skills">
-          <h2>Skills</h2>
-          <div class="pill-row">
+        <section class="card span-6">
+          <h2>Project Stack</h2>
+          <div class="stack">
             <span class="pill">HTML</span>
             <span class="pill">CSS</span>
             <span class="pill">GitHub Pages</span>
             <span class="pill">WotNot</span>
-            <span class="pill">Chatbot Integration</span>
-            <span class="pill">AI Tools</span>
-            <span class="pill">Data Science Basics</span>
+            <span class="pill">Chat Widget</span>
+            <span class="pill">AI Assistant</span>
+          </div>
+          <div style="height:14px"></div>
+          <div class="panel">
+            <h3>What this page demonstrates</h3>
+            <p class="muted" style="margin:0;">
+              A clean project showcase, a test-friendly layout, and a live chatbot widget that acts like a real support assistant.
+            </p>
           </div>
         </section>
 
-        <section class="card span-4">
-          <h2>Education</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <strong>BS in Applied AI and Data Science</strong>
-              <span class="muted">Current program</span>
+        <section class="card span-12" id="metrics">
+          <h2>Testing Goals</h2>
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>Fast</strong>
+              <span class="muted">Widget opens smoothly and feels responsive.</span>
             </div>
-          </div>
-        </section>
-
-        <section class="card span-4">
-          <h2>Strengths</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <strong>Problem Solving</strong>
-              <span class="muted">Building practical solutions</span>
+            <div class="metric">
+              <strong>Useful</strong>
+              <span class="muted">Answers should help users understand the program.</span>
             </div>
-            <div class="timeline-item">
-              <strong>Learning Mindset</strong>
-              <span class="muted">Always improving skills</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="card span-4" id="contact">
-          <h2>Contact</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <strong>Email</strong>
-              <span class="muted">your-email@example.com</span>
-            </div>
-            <div class="timeline-item">
-              <strong>GitHub</strong>
-              <span class="muted">github.com/your-username</span>
+            <div class="metric">
+              <strong>Professional</strong>
+              <span class="muted">Looks like a real project demo site.</span>
             </div>
           </div>
         </section>
 
-        <section class="card span-12" id="projects">
-          <h2>Featured Project</h2>
-          <div class="project-layout">
-            <div class="project-box">
-              <h3>Customer Support Assistant Chatbot</h3>
-              <p class="muted">
-                I built this chatbot to assist people with information about the BS in Applied AI and
-                Data Science program. It is a strong project for my CV because it shows practical use
-                of AI tools and web integration.
-              </p>
-              <div class="project-list">
-                <span><i class="dot"></i> Built with WotNot</span>
-                <span><i class="dot"></i> Embedded as a floating widget</span>
-                <span><i class="dot"></i> Useful for customer support and guidance</span>
-                <span><i class="dot"></i> Great for GitHub Pages portfolio</span>
-              </div>
-            </div>
-
-            <div class="project-box" id="chatbot">
+        <section class="card span-12" id="chatbot">
+          <h2>Live Chatbot</h2>
+          <div class="chat-section">
+            <div class="chat-box">
               <div class="chat-note">
-                The chatbot loads as a floating widget in the bottom-right corner. Click it to open the conversation.
+                The chatbot is loaded as a floating widget. Use it to test the support flow.
               </div>
-              <h3>Chatbot Preview</h3>
+              <h3>What to check</h3>
               <p class="muted">
-                If the widget does not appear immediately, refresh the page once after publishing on GitHub.
+                Use this project page to show that your chatbot is integrated into a live website.
+                For a portfolio or demo, this is a simple and professional way to present your work.
               </p>
+              <div class="steps" style="margin-top:16px;">
+                <div class="step">
+                  <div class="num">✓</div>
+                  <div>
+                    <strong>Responsive widget</strong>
+                    <div class="muted">Works on desktop and mobile devices.</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="num">✓</div>
+                  <div>
+                    <strong>Easy access</strong>
+                    <div class="muted">Visitors can chat without leaving the page.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-box">
+              <h3>Chatbot Embed Area</h3>
               <p class="muted">
-                Use this section to explain the chatbot on your CV page and let the live widget handle the interaction.
+                The WotNot script below opens the bot as a widget. You do not need an iframe box for this version.
               </p>
+              <div class="iframe-wrap" style="display:flex;align-items:center;justify-content:center;min-height:240px;">
+                <div style="padding:22px;text-align:center;max-width:420px;">
+                  <div style="font-size:1.1rem;font-weight:700;margin-bottom:8px;">Chatbot is active</div>
+                  <div class="muted">Look at the bottom-right corner of the page and click the chat button.</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </section>
 
       <footer class="footer">
-        © 2026 Ashish Sharma • Built for GitHub Pages
+        © 2026 Ashish Sharma • Chatbot project test site
       </footer>
     </main>
   </div>
