@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashish Sharma | CV Portfolio</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --card2:#1f2937;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+      --accent:#38bdf8;
+      --accent2:#22c55e;
+      --border:rgba(255,255,255,.08);
+      --shadow:0 18px 50px rgba(0,0,0,.35);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(56,189,248,.18), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(34,197,94,.12), transparent 24%),
+        linear-gradient(180deg, #020617 0%, #0f172a 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 56px}
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+      align-items:stretch;
+      margin-top:18px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(17,24,39,.92), rgba(17,24,39,.78));
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .hero-left{padding:34px}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border-radius:999px;
+      background:rgba(56,189,248,.12);
+      border:1px solid rgba(56,189,248,.25);
+      color:#c9f1ff;font-size:.92rem
+    }
+    h1{margin:16px 0 8px;font-size:clamp(2.2rem,5vw,4rem);line-height:1.05}
+    .lead{color:var(--muted);max-width:62ch;font-size:1.05rem}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 18px;border-radius:14px;font-weight:700;
+      border:1px solid var(--border);transition:.2s ease;
+    }
+    .btn.primary{background:linear-gradient(135deg, var(--accent), #60a5fa);color:#00111a}
+    .btn.secondary{background:rgba(255,255,255,.04)}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-right{padding:26px;display:flex;flex-direction:column;gap:16px}
+    .mini{
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+    }
+    .mini h3{margin:0 0 8px;font-size:1rem}
+    .mini p{margin:0;color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:22px;
+      margin-top:22px;
+    }
+    section.card{padding:26px}
+    .full{grid-column:1/-1}
+    .two{grid-column:span 6}
+    .three{grid-column:span 4}
+    h2{margin:0 0 16px;font-size:1.4rem}
+    .muted{color:var(--muted)}
+    .pill-row{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{
+      padding:9px 12px;border-radius:999px;
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--border);
+      color:#dbeafe;font-size:.95rem
+    }
+    .project{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    .project-box{
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+    }
+    .project-box h3{margin:0 0 8px}
+    .iframe-wrap{
+      overflow:hidden;
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:#0b1220;
+      aspect-ratio: 4 / 3;
+    }
+    iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+      min-height:480px;
+    }
+    .timeline{
+      display:grid;
+      gap:14px;
+    }
+    .item{
+      padding:16px 18px;
+      border-left:3px solid var(--accent);
+      background:rgba(255,255,255,.03);
+      border-radius:14px;
+      border:1px solid var(--border);
+    }
+    .item strong{display:block;margin-bottom:4px}
+    footer{
+      margin-top:24px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .two,.three{grid-column:1/-1}
+      .hero-left{padding:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="card hero-left">
+        <span class="badge">AI & Data Science Student • Portfolio CV</span>
+        <h1>Ashish Sharma</h1>
+        <p class="lead">
+          I am an AI and Data Science student building practical projects that combine automation,
+          web technology, and intelligent assistants. This portfolio highlights my chatbot project
+          created for customer support and guidance on the BS in Applied AI and Data Science program.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#project">View Chatbot Project</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="card hero-right">
+        <div class="mini">
+          <h3>Profile</h3>
+          <p>Student focused on AI, data science, web development, and portfolio-ready projects.</p>
+        </div>
+        <div class="mini">
+          <h3>Goal</h3>
+          <p>To create useful, real-world applications that help users and strengthen my CV.</p>
+        </div>
+        <div class="mini">
+          <h3>Featured Work</h3>
+          <p>Customer support assistant chatbot built with WotNot and embedded into a webpage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="card two">
+        <h2>About Me</h2>
+        <p class="muted">
+          I am currently studying BS in Applied AI and Data Science. I enjoy learning by building
+          projects, especially those that solve practical problems. My interest areas include
+          AI tools, automation, front-end web design, and data-driven applications.
+        </p>
+      </section>
+
+      <section class="card two">
+        <h2>Skills</h2>
+        <div class="pill-row">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">GitHub Pages</span>
+          <span class="pill">Chatbot Integration</span>
+          <span class="pill">AI Tools</span>
+          <span class="pill">Data Science Basics</span>
+        </div>
+      </section>
+
+      <section class="card three">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="item">
+            <strong>BS in Applied AI and Data Science</strong>
+            <span class="muted">Current program</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card three">
+        <h2>Strengths</h2>
+        <div class="timeline">
+          <div class="item">
+            <strong>Problem Solving</strong>
+            <span class="muted">Focus on practical solutions</span>
+          </div>
+          <div class="item">
+            <strong>Learning Mindset</strong>
+            <span class="muted">Continuously improving skills</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card three">
+        <h2>Contact</h2>
+        <div class="timeline">
+          <div class="item">
+            <strong>Email</strong>
+            <span class="muted">your-email@example.com</span>
+          </div>
+          <div class="item">
+            <strong>GitHub</strong>
+            <span class="muted">github.com/your-username</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="card full">
+        <h2>Featured Project: Customer Support Assistant Chatbot</h2>
+        <p class="muted">
+          This chatbot helps users learn about the BS in Applied AI and Data Science program.
+          It can be used as a smart support assistant inside my portfolio website.
+        </p>
+
+        <div class="project">
+          <div class="project-box">
+            <h3>Project Summary</h3>
+            <p class="muted">
+              Built using WotNot and embedded directly into this webpage using an iframe. This
+              project shows my ability to combine AI tools with web presentation for a professional portfolio.
+            </p>
+          </div>
+
+          <div class="iframe-wrap">
+            <iframe
+              src="https://embed.wotnot.io/4TP2SKFgnTuk071037854113svXJyLXd/bot/7oZGoZUdu8Nj072930803912m80iB4Fk?display_header=false&history_retention=false"
+              frameborder="0"
+              title="Customer Support Assistant Chatbot">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="card full">
+        <h2>Contact Me</h2>
+        <p class="muted">
+          Add your real email, GitHub profile, LinkedIn, and any other contact details here before publishing.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      © 2026 Ashish Sharma • Built for GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
