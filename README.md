@@ -1,7 +1,7 @@
 # IITJ-Executive-program-customer-support-chatbot
 # 🤖 Customer Support Assistant Chatbot
 
-A chatbot-based support system built using **WotNot** to assist users with queries related to the **BS in Applied AI and Data Science program**.
+A website demo of a customer-support chatbot built with **WotNot** to answer common questions about the **BS in Applied AI and Data Science program**. It demonstrates chatbot embedding and user experience; responses should be checked against official program information for accuracy.
 
 🔗 **Live Demo:**  
 https://ashishsrs01.github.io/IITJ-Executive-program-customer-support-chatbot/
